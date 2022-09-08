@@ -9,7 +9,7 @@ dp = Dispatcher(bot)
 async def answer_start_command(message: types.Message):
     await message.answer(text='Привет')
 
-@dp.message_handler(text=['привет1'])
+@dp.message_handler(text=['привет'])
 async def answer_prvt_text(message: types.Message):
     await message.answer(text='+')
 
